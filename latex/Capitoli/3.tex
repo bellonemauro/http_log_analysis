@@ -1,0 +1,25 @@
+\chapter{Conclusioni}
+
+\section{Sintesi del caso studio}
+
+Il presente lavoro di tesi ha avuto come obiettivo principale la progettazione, implementazione e valutazione di un sistema di \emph{Anomaly Detection} basato sull’algoritmo Isolation Forest, applicato all’analisi di log HTTP provenienti da un contesto reale.
+
+Il punto di partenza dell’elaborato risiede nella constatazione che i sistemi di difesa tradizionali, fondati su firme statiche e regole predefinite, mostrano limiti significativi nel fronteggiare la crescente dinamicità delle minacce informatiche e l’elevata variabilità del traffico web moderno. In tale scenario, approcci basati su tecniche di Machine Learning risultano particolarmente promettenti, in quanto permettono di individuare comportamenti anomali senza la necessità di una conoscenza preventiva delle specifiche tipologie di attacco.
+
+L’attività svolta si è quindi concentrata sulla costruzione di un dataset derivato da log HTTP, opportunamente trasformato attraverso un processo di \emph{feature engineering} volto a estrarre metriche significative dal punto di vista della sicurezza applicativa. Su tali dati è stato applicato un modello non supervisionato, con l’obiettivo di verificare la capacità dell’algoritmo di identificare automaticamente richieste anomale o potenzialmente malevole.
+
+I risultati ottenuti evidenziano come l’approccio adottato sia efficace nell’individuare comportamenti anomali all’interno del traffico analizzato. In particolare, il modello dimostra una buona sensibilità nel rilevare pattern atipici, confermando la validità dell’ipotesi iniziale. Tuttavia, come prevedibile nei sistemi di anomaly detection non supervisionati, emerge la presenza di falsi positivi, spesso associati a traffico lecito ma caratterizzato da elevata complessità o intensità.
+
+Tale comportamento evidenzia un compromesso intrinseco tra sensibilità e precisione: se da un lato il modello è in grado di intercettare un ampio spettro di anomalie, dall’altro richiede ulteriori meccanismi di filtraggio o validazione per ridurre il numero di segnalazioni non rilevanti. Questo aspetto rappresenta una caratteristica comune nei modelli di Machine Learning applicati alla cybersecurity, in cui il raggiungimento simultaneo di elevati livelli di precisione e accuratezza risulta particolarmente complesso, soprattutto in assenza di dati etichettati.
+
+\section{Considerazioni finali}
+
+Il sistema sviluppato non si propone come sostituto dei meccanismi di difesa tradizionali, bensì come un elemento complementare in grado di arricchire l’infrastruttura di sicurezza esistente. In particolare, l’introduzione di un modello di anomaly detection consente di aggiungere uno strato di analisi comportamentale capace di evidenziare deviazioni rispetto al traffico atteso, contribuendo a portare alla luce eventi che difficilmente verrebbero individuati mediante approcci basati esclusivamente su regole statiche.
+
+Dal punto di vista applicativo, il modello proposto si presta a essere integrato in sistemi web basati su tecnologie Python, come ad esempio framework lato server, dove può operare come componente di pre-analisi del traffico. In tale contesto, esso potrebbe essere utilizzato per effettuare una prima fase di filtraggio o prioritizzazione delle richieste, facilitando il lavoro di sistemi più complessi o di analisti umani.
+
+È importante sottolineare che, in scenari in cui siano disponibili dataset etichettati e ben strutturati, approcci supervisionati – quali Random Forest o reti neurali – possono offrire prestazioni superiori in termini di accuratezza. Tuttavia, la loro applicabilità risulta spesso limitata dalla difficoltà di ottenere dati rappresentativi e correttamente classificati. In questo senso, l’approccio non supervisionato adottato in questo lavoro rappresenta una soluzione flessibile e immediatamente applicabile in contesti reali.
+
+In conclusione, il lavoro svolto dimostra come l’impiego di tecniche di Machine Learning, e in particolare di algoritmi come Isolation Forest, possa costituire un valido supporto per l’analisi dei log e il rilevamento di anomalie in ambito web. Pur con i limiti evidenziati, l’approccio proposto rappresenta un passo significativo verso sistemi di sicurezza più adattivi, scalabili e capaci di evolvere insieme alle minacce che intendono contrastare.
+
+Infine, possibili sviluppi futuri del lavoro includono l’integrazione con modelli ibridi (supervisionati e non supervisionati), l’ottimizzazione delle tecniche di feature engineering e l’adozione di strategie di riduzione dei falsi positivi, ad esempio attraverso meccanismi di feedback o validazione incrementale. Tali direzioni potrebbero contribuire a migliorare ulteriormente l’efficacia e l’applicabilità del sistema in contesti operativi reali.

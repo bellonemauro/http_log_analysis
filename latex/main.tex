@@ -1,0 +1,177 @@
+\documentclass[twoside,12pt,openright]{report} % IL setup attuale è doppia faccia
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel} %Se si vuole utilizzare l'italiano cambiare "english" in "italian"
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm,marginparwidth=1.5cm,bindingoffset=15mm,heightrounded]{geometry}
+\usepackage{csquotes}
+\usepackage{quoting}
+\quotingsetup{font=small}
+
+% Times new Roman font e interlinea a 1.5 (mandatorie Mercatorum)
+\usepackage{times}
+\linespread{1.5}
+
+% Per creare box colorati
+\usepackage{tcolorbox}
+
+\usepackage{mdframed}
+
+% Definiamo uno stile per la vignetta
+\tcbset{
+    myvignette/.style={
+        colback=gray!20,   % Sfondo grigio chiaro
+        colframe=black,     % Bordo nero
+        coltitle=white,     % Titolo bianco
+        fonttitle=\bfseries,% Titolo in grassetto
+        boxrule=1pt,        % Spessore del bordo
+        rounded corners,    % Angoli arrotondati
+        width=\textwidth,   % Larghezza pari alla pagina
+        sharp corners=north,% Angolo superiore non arrotondato
+        title={Caso Particolare} % Titolo di default
+    }
+}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+% ------------------------------------------------------------------------------------------Format generale per inserire immagini
+%\begin{figure}[htbp]
+    %\centering
+    %\includegraphics[width=0.7\textwidth]{nome_file_immagine}
+    %\caption{Descrizione dell'immagine}
+    %\label{fig:etichetta_per_riferimento}
+%\end{figure}
+%-------------------------------------------------------------------------------------------
+
+\usepackage[colorlinks=true, allcolors=black]{hyperref} % Si può modificare allcolors=blue per una migliore visione in fase di produzione
+
+% Per inserire codice MATLAB
+\usepackage{xcolor}% Per la colorazione del codice
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{listings}
+
+
+\lstdefinestyle{MatlabStyle}{% Se si usa un altro linguaggio, modificare "language"
+    language=Matlab,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red},
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    rulecolor=\color{black},
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt
+}
+
+\lstdefinestyle{LogStyle}{
+    basicstyle=\ttfamily\small,
+    breaklines=true,                % Fondamentale per non uscire dai margini
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    rulecolor=\color{gray!30},
+    xleftmargin=10pt,
+    showstringspaces=false
+}
+% ---------------------------------------------------------------------------------------------Da usare per fare il matlab style \begin{lstlisting}[style=MatlabStyle, caption={}, label={lst:}] ------------------------------------------------------------------------------------------------------
+
+
+\usepackage{booktabs}
+
+\usepackage{tikz}
+
+% TikZ libraries
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric}
+
+% TikZ styles
+\tikzstyle{vertex}=[circle, draw, thick, minimum size=15pt, inner sep=1pt]
+\tikzstyle{edge label}=[midway, fill=white, inner sep=1pt, font=\footnotesize]
+\tikzstyle{directed edge}=[-{Latex[length=2mm]}, thick]
+\tikzstyle{undirected edge}=[thick]
+
+\usepackage{algorithm}% For algorithm environment
+\usepackage{algpseudocode} % For pseudocode layout
+% Define argmin operator if not available
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib} % OK
+\usepackage{lipsum}
+
+
+% Minted da noie, quindi usiamo sto coso:
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+% Definizione colori stile "VsCode Light"
+\definecolor{keywordcolor}{rgb}{0.0, 0.0, 1.0}   % Blu
+\definecolor{stringcolor}{rgb}{0.6, 0.1, 0.1}    % Rosso scuro
+\definecolor{commentcolor}{rgb}{0.0, 0.5, 0.0}   % Verde
+\definecolor{numbercolor}{rgb}{0.5, 0.5, 0.5}    % Grigio
+\definecolor{backgroundcolor}{rgb}{0.97, 0.97, 0.97} % Grigio chiarissimo
+
+\lstset{
+    backgroundcolor=\color{backgroundcolor},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{commentcolor},
+    keepspaces=true,
+    keywordstyle=\color{keywordcolor},
+    numbers=left,
+    numbersep=10pt,
+    numberstyle=\tiny\color{numbercolor},
+    rulecolor=\color{black!30},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    stepnumber=1,
+    stringstyle=\color{stringcolor},
+    tabsize=2,
+    frame=lines % Linea sopra e sotto il codice
+}
+
+% Setup specifico per JSON
+\lstdefinelanguage{json}{
+    morestring=[b]",
+    morestring=[d]'
+}
+
+\usepackage{tabularx}
+
+\begin{document}
+
+\include{Capitoli/Frontespizio_Merca}
+
+\newpage
+\null
+\newpage
+
+\include{Capitoli/Dedica}
+
+\tableofcontents
+
+\include{Capitoli/Introduction}
+
+\include{Capitoli/1}
+
+\include{Capitoli/2}
+
+\include{Capitoli/3}
+
+% \include{Capitoli/Conclusion}
+
+\chapter*{Ringraziamenti}
+\addcontentsline{toc}{chapter}{Ringraziamenti}
+
+\lipsum[1]
+
+\printbibliography
+
+\end{document}

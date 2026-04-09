@@ -1,0 +1,19 @@
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+
+\section*{Obiettivi}
+\addcontentsline{toc}{section}{Obiettivi}
+
+Negli ultimi anni il traffico web ha assunto un ruolo centrale nell’infrastruttura digitale globale. Applicazioni distribuite, servizi \emph{cloud}, piattaforme \emph{e-commerce }e sistemi informativi aziendali si basano su architetture \emph{client–server} che utilizzano il protocollo \emph{HTTP} (\emph{Hyper-Text Transfer Protocol}) come meccanismo primario di comunicazione. In tale contesto, i server web producono una quantità significativa di dati sotto forma di \emph{log}, che rappresentano una fonte informativa preziosa per finalità di monitoraggio, sicurezza, \emph{debugging} e analisi comportamentale.
+
+Parallelamente, l’aumento della superficie di esposizione dei servizi \emph{web} ha reso sempre più rilevante l’individuazione tempestiva di comportamenti anomali, accessi sospetti e pattern di traffico non conformi al normale utilizzo dell’applicazione. Tecniche tradizionali basate su regole statiche o \emph{blacklist} manuali mostrano limiti in termini di scalabilità e adattabilità a contesti dinamici. In questo scenario, l’applicazione di metodologie di analisi automatizzata e di tecniche di \emph{machine learning} rappresenta un approccio promettente per l’identificazione di anomalie nei log dei server web.
+
+La presente tesi si colloca all’intersezione tra programmazione, analisi dei dati e sistemi web, con l’obiettivo di progettare e implementare un sistema prototipale per l’analisi automatica dei \emph{log HTTP} e l’individuazione di comportamenti anomali.
+
+L’elaborato non si limita a una trattazione teorica, ma prevede la realizzazione di un caso di studio concreto basato sulla generazione e raccolta di log reali provenienti da un’applicazione web sviluppata e distribuita.
+
+\section*{Metodologia}
+\addcontentsline{toc}{section}{Metodologia}
+Il caso di studio presentato in questo elaborato si basa sull’analisi di un dataset di \emph{log HTTP} già esistente, opportunamente selezionato e sottoposto a un processo di anonimizzazione e censura dei dati sensibili. In particolare, sono stati rimossi o mascherati elementi quali indirizzi IP completi, eventuali identificativi personali e informazioni riconducibili a utenti specifici, nel rispetto dei principi di minimizzazione e protezione dei dati.
+
+Il dataset utilizzato contiene richieste \emph{HTTP} provenienti da un’applicazione web reale e comprende sia traffico ordinario sia richieste anomale o potenzialmente malevole inserite artificialmente. Prima dell’analisi, i log sono stati sottoposti a una fase di \emph{pre-processing}, comprendente \emph{parsing} strutturato, normalizzazione dei campi rilevanti e trasformazione in un formato idoneo all’elaborazione tramite algoritmi di \emph{machine learning}.
