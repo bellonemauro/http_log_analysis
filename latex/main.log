@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.27)  13 APR 2026 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.27)  13 APR 2026 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1367,34 +1367,64 @@ Package pdftex.def Info: Immagini/Matrice_di_confusione_all.png  used on input l
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.308 active 
-             = top_anomalies_melted[top_anomalies_melted["value"] == 1] <./Immagini/Matrice_di_confusione_all.png>]
+l.304  
+          var_name='categories', <./Immagini/Matrice_di_confusione_all.png>]
 Overfull \hbox (4.27615pt too wide) in paragraph at lines 316--336
  [][] 
  []
 
-) [33
+[33
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+l.340 
+      ]
+<Immagini/boxplotlimited.png, id=426, 476.982pt x 376.5267pt>
+File: Immagini/boxplotlimited.png Graphic file (type png)
+<use Immagini/boxplotlimited.png>
+Package pdftex.def Info: Immagini/boxplotlimited.png  used on input line 345.
+(pdftex.def)             Requested size: 384.11223pt x 303.22113pt.
+<Immagini/boxplotall.png, id=427, 471.9231pt x 376.5267pt>
+File: Immagini/boxplotall.png Graphic file (type png)
+<use Immagini/boxplotall.png>
+Package pdftex.def Info: Immagini/boxplotall.png  used on input line 354.
+(pdftex.def)             Requested size: 384.11223pt x 306.47299pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.358 
+       <./Immagini/boxplotlimited.png>]) [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.164 \include{Capitoli/2}
-                          ]
+                           <./Immagini/boxplotall.png>]
 \openout2 = `Capitoli/3.aux'.
 
- (Capitoli/3.tex [34
+ (Capitoli/3.tex [36
 
 
 
 
 ]
 Capitolo 3.
-[35]) [36] [37
+[37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38] [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]) [41] [42
 
 
 
-] [38
+] [43] [44
 
-] [39] [40]
+] [45] [46]
 Overfull \hbox (19.66566pt too wide) in paragraph at lines 176--176
 [][]\OT1/ptm/m/n/12 MITRE. (2026b). \OT1/ptm/m/it/12 Tech-ni-ques { Bru-te For-ce \OT1/ptm/m/n/12 [ID: T1110. Ul-ti-mo ac-ces-so 23/03/2026].
  []
@@ -1404,7 +1434,7 @@ Overfull \hbox (5.06596pt too wide) in paragraph at lines 176--176
 [][]\OT1/ptm/m/n/12 OWASP Foun-da-tion. (2021b). \OT1/ptm/m/it/12 A03:2021 { In-jec-tion \OT1/ptm/m/n/12 [Ul-ti-mo ac-ces-so 23/03/2026].
  []
 
-[41] [42] (main.aux (Capitoli/Frontespizio_Merca.aux) (Capitoli/Dedica.aux) (Capitoli/Introduction.aux) (Capitoli/1.aux) (Capitoli/2.aux) (Capitoli/3.aux))
+[47] [48] (main.aux (Capitoli/Frontespizio_Merca.aux) (Capitoli/Dedica.aux) (Capitoli/Introduction.aux) (Capitoli/1.aux) (Capitoli/2.aux) (Capitoli/3.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1420,17 +1450,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38382 strings out of 467867
- 746904 string characters out of 5417366
- 1889520 words of memory out of 5000000
- 66487 multiletter control sequences out of 15000+600000
+ 38406 strings out of 467867
+ 747446 string characters out of 5417366
+ 1889691 words of memory out of 5000000
+ 66503 multiletter control sequences out of 15000+600000
  651332 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1275b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (42 pages, 441103 bytes).
+Output written on main.pdf (48 pages, 493017 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

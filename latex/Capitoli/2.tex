@@ -284,9 +284,9 @@ Da un'analisi approfondita, emerge che tali richieste non appartengono al "rumor
 
 \section{Applicazione dell'algoritmo all'intero dataset}
 
-Nelle sezioni precedenti, come indicato in precedenza, per effettuare una fase esplorativa e calibrare i parametri dell'algoritmo, si è proceduto a prendere in considerazione solo i primi 1000 record del dataset.
+Nelle sezioni precedenti, al fine di condurre una fase esplorativa e calibrare i parametri dell’algoritmo, l’analisi è stata inizialmente limitata ai primi 1000 record del dataset.
 
-Per convalidare i risultati si è dunque applicato l'algrotimo all'intero dataset, scoprendo uno dei limiti principali dell'algoritmo di isolation forest. Degli attacchi inseriti manualmente solo uno viene riconosciuto come tale. dei circa 4 milioni di record, circa 100.000 vengono riconosciuti come anomalie e gli attacchi inseriti manualmente vengono classificati come Falsi Negativi.
+Per verificare la tenuta del modello in uno scenario più realistico, l’algoritmo è stato successivamente applicato all’intero dataset. Questa seconda valutazione ha evidenziato uno dei principali limiti dell’Isolation Forest in contesti fortemente sbilanciati: i quattro attacchi inseriti manualmente non emergono più con sufficiente evidenza quando vengono immersi in un corpus di circa quattro milioni di record. In tale scenario, il modello attribuisce l’etichetta di anomalia a un numero molto elevato di osservazioni, circa 100.000, ma riflettono soprattutto traffico legittimo statisticamente atipico.
 
 \begin{figure}[H]
       \centering
@@ -309,7 +309,7 @@ active = top_anomalies_melted[top_anomalies_melted["value"] == 1]
 combos = active.groupby("log_id")["categories"].agg(lambda x: ", ".join(tuple(sorted(x)))).reset_index(name='tuple')
 \end{lstlisting}
 
-Si ricava la seguente tabella:
+Si estrapola la seguente tabella:
 
 \begin{table}[H]
       \centering
@@ -336,4 +336,24 @@ Si ricava la seguente tabella:
       \caption{Report di classificazione delle occorrenze per combinazione di feature.}
 \end{table}
 
-Appare quindi evidente che il rumore di fondo generato dai web crawler offuschi quelli che l'algoritmo dovrebbe catalogare come attacchi.
+L’analisi delle combinazioni di feature mostra che molte delle osservazioni segnalate come anomale condividono attributi ricorrenti come \emph{is\_known\_bot}, \emph{special\_chars} e \emph{has\_suspicious\_request\_len}. Questo suggerisce che il modello non sta isolando esclusivamente gli attacchi, ma intercetta anche pattern statistici frequenti nel traffico legittimo, in particolare richieste generate da crawler o risorse di dimensione insolita. Di conseguenza, l’anomalia rilevata dal modello non coincide sempre con un evento di sicurezza, ma spesso con una deviazione rispetto alla normalità statistica del dataset
+
+Per visualizzare l’effetto del forte sbilanciamento del dataset, si riporta un grafico boxplot degli anomaly score rispetto alla posizione del record nel dataframe sia per il caso di un dataset limitato, sia per il caso del dataset completo.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{Immagini/boxplotlimited.png}
+      \caption{Boxplot distribuzione anomalie (Dataset limitato ai primi 1000 record)}
+      \label{fig:boxplotlimit}
+\end{figure}
+
+Per il dataset limitato, il boxplot mostra che i 4 attacchi cadono chiaramente nella zona di coda e vengono facilmente separati dalla distribuzione principale.
+
+\begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{Immagini/boxplotall.png}
+      \caption{Boxplot distribuzione anomalie (Dataset intero)}
+      \label{fig:boxplotall}
+\end{figure}
+
+Per il dataset completo, la distribuzione degli score si allarga e il segnale dei quattro attacchi perde forza discriminante, perché la soglia di anomalia non li isola più in modo affidabile.

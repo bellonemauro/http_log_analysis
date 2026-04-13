@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {2.4}Applicazione dell'algoritmo}{26}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Interpretazione dei risultati}{28}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Applicazione dell'algoritmo all'intero dataset}{31}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Conclusioni}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sintesi del caso studio}{35}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Considerazioni finali}{36}{section.3.2}%
-\contentsline {chapter}{Ringraziamenti}{37}{chapter*.5}%
+\contentsline {chapter}{\numberline {3}Conclusioni}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sintesi del caso studio}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Considerazioni finali}{39}{section.3.2}%
+\contentsline {chapter}{Ringraziamenti}{43}{chapter*.5}%
