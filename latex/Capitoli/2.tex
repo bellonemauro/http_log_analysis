@@ -305,8 +305,8 @@ Dopo una più approfondita operazione di clustering ricavato dalla seguente quer
     value_vars=features_boolean,
     value_name='value')
 
-active = top_anomalies_melted[top_anomalies_melted["value"] == 1]
-combos = active.groupby("log_id")["categories"].agg(lambda x: ", ".join(tuple(sorted(x)))).reset_index(name='tuple')
+active = top_anomalies_melted[top_anomalies_melted['value'] == 1]
+combos = active.groupby('log_id')['categories'].agg(lambda x: ", ".join(tuple(sorted(x)))).reset_index(name='tuple')
 \end{lstlisting}
 
 Si estrapola la seguente tabella:
