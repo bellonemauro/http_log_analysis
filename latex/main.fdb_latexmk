@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1776075185.146 "main.bcf" "main.bbl" "main" 1776098883.91028 0
-  "main.bcf" 1776098883 136957 d37da367d99498cc39774871a62eff54 "pdflatex"
+["biber main"] 1776075185.146 "main.bcf" "main.bbl" "main" 1776163890.75829 0
+  "main.bcf" 1776163890 136957 d37da367d99498cc39774871a62eff54 "pdflatex"
   "references.bib" 1775162007 11346 1f2bbdd8ce7440a5e2be67cf131991f0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776098881.31164 "c:/Users/6060650/OneDrive - Gruppo Ferrovie Dello Stato/00.Personal_Space/Tesi/script/latex/main.tex" "main.pdf" "main" 1776098883.91156 0
+["pdflatex"] 1776163884.6818 "c:/Users/6060650/OneDrive - Gruppo Ferrovie Dello Stato/00.Personal_Space/Tesi/script/latex/main.tex" "main.pdf" "main" 1776163890.75953 0
   "C:/Users/6060650/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774959507 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/6060650/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1774601327 13334817 22c88fdf7da38f2780c11516da9a0c20 ""
   "C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -235,17 +235,17 @@
   "C:/Users/6060650/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/6060650/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1773584792 2269 91cd03da61ab1da00145ba8a81560051 ""
   "C:/Users/6060650/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1773584792 20785 8db5f0a2b2ce96dda9fac87ccab29449 ""
-  "Capitoli/1.aux" 1776098882 6107 11b20f87d122ce78eca1d4cdadffb780 "pdflatex"
+  "Capitoli/1.aux" 1776163889 6107 11b20f87d122ce78eca1d4cdadffb780 "pdflatex"
   "Capitoli/1.tex" 1775135066 13653 b3738d87626a43d021d04f2c98a9877c ""
-  "Capitoli/2.aux" 1776098883 8715 ab1b320e8717d291af8858d38495b691 "pdflatex"
-  "Capitoli/2.tex" 1776098732 29904 7e560d42a4d50b4e7b9210836bf5aa4c ""
-  "Capitoli/3.aux" 1776098883 5158 109c81c9a8baa598377818c11b57f3dd "pdflatex"
+  "Capitoli/2.aux" 1776163890 8715 ab1b320e8717d291af8858d38495b691 "pdflatex"
+  "Capitoli/2.tex" 1776163883 29982 85ea852fdf08bc7bd1d44b4db077d226 ""
+  "Capitoli/3.aux" 1776163890 5158 109c81c9a8baa598377818c11b57f3dd "pdflatex"
   "Capitoli/3.tex" 1776098880 9466 5a4ea84f0ba340861fd2e638c4508498 ""
-  "Capitoli/Dedica.aux" 1776098882 4725 cc378c66156562ad91f5bbc90ac1c9cb "pdflatex"
+  "Capitoli/Dedica.aux" 1776163889 4725 cc378c66156562ad91f5bbc90ac1c9cb "pdflatex"
   "Capitoli/Dedica.tex" 1775164207 68 dd5d8079cb31c4598a47652e5d447f17 ""
-  "Capitoli/Frontespizio_Merca.aux" 1776098882 4737 7e1677552cf0556cf7626ad4cbb0bef5 "pdflatex"
+  "Capitoli/Frontespizio_Merca.aux" 1776163889 4737 7e1677552cf0556cf7626ad4cbb0bef5 "pdflatex"
   "Capitoli/Frontespizio_Merca.tex" 1774604991 1644 697fe76996465b832599cfc4aedec2ea ""
-  "Capitoli/Introduction.aux" 1776098882 5012 94fc89dc3c79ad30eb928448e9ed3131 "pdflatex"
+  "Capitoli/Introduction.aux" 1776163889 5012 94fc89dc3c79ad30eb928448e9ed3131 "pdflatex"
   "Capitoli/Introduction.tex" 1775134520 2881 b256eeab3ce9039b57702956d90c8de4 ""
   "Immagini/CLF.jpg" 1774611757 42159 04cc612244c5e527d20bd407950d7c19 ""
   "Immagini/Matrice_di_confusione.png" 1775160050 24628 3bccce638b9a2706568042ad3a06cec0 ""
@@ -255,12 +255,12 @@
   "Immagini/boxplotlimited.png" 1776091322 26563 6ec9d4b86fa6f7811f7f33ea1815ec73 ""
   "Immagini/df_info_pandas.png" 1774953772 13164 f4a91ced9a1475ddf1e24ff650cf26fc ""
   "c:/Users/6060650/OneDrive - Gruppo Ferrovie Dello Stato/00.Personal_Space/Tesi/script/latex/main.tex" 1775140497 5050 be20381ab7b7fdfd4a8d7c09bceb3f28 ""
-  "main.aux" 1776098883 10431 eb9c03ca05f2532f98621b58c50b7fd5 "pdflatex"
+  "main.aux" 1776163890 10431 eb9c03ca05f2532f98621b58c50b7fd5 "pdflatex"
   "main.bbl" 1776075283 123195 927c78570e0aa128fab4441ded331e3a "biber main"
-  "main.out" 1776098883 4326 3fdbee6a9dd227f691851b55cd1b8191 "pdflatex"
-  "main.run.xml" 1776098883 2359 4a023048b751bed1a248116e86cc4c2f "pdflatex"
+  "main.out" 1776163890 4326 3fdbee6a9dd227f691851b55cd1b8191 "pdflatex"
+  "main.run.xml" 1776163890 2359 4a023048b751bed1a248116e86cc4c2f "pdflatex"
   "main.tex" 1775140497 5050 be20381ab7b7fdfd4a8d7c09bceb3f28 ""
-  "main.toc" 1776098883 1864 aae9d033ad9d85a31f577134bd077bb5 "pdflatex"
+  "main.toc" 1776163890 1864 aae9d033ad9d85a31f577134bd077bb5 "pdflatex"
   (generated)
   "Capitoli/1.aux"
   "Capitoli/2.aux"
