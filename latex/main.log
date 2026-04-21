@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.27)  14 APR 2026 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.27)  21 APR 2026 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1006,7 +1006,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 LaTeX Warning: Label `lst:prova' multiply defined.
 
-) (Capitoli/3.aux))
+) (Capitoli/3.aux) (Capitoli/Thanks.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
@@ -1369,7 +1369,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) h
                                                   \__shipout_drop_firstpage_...
 l.304  
           var_name='categories', <./Immagini/Matrice_di_confusione_all.png>]
-Overfull \hbox (4.27615pt too wide) in paragraph at lines 316--336
+Overfull \hbox (4.27615pt too wide) in paragraph at lines 316--337
  [][] 
  []
 
@@ -1377,17 +1377,17 @@ Overfull \hbox (4.27615pt too wide) in paragraph at lines 316--336
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.340 
+l.341 
       ]
 <Immagini/boxplotlimited.png, id=426, 476.982pt x 376.5267pt>
 File: Immagini/boxplotlimited.png Graphic file (type png)
 <use Immagini/boxplotlimited.png>
-Package pdftex.def Info: Immagini/boxplotlimited.png  used on input line 345.
+Package pdftex.def Info: Immagini/boxplotlimited.png  used on input line 346.
 (pdftex.def)             Requested size: 384.11223pt x 303.22113pt.
 <Immagini/boxplotall.png, id=427, 471.9231pt x 376.5267pt>
 File: Immagini/boxplotall.png Graphic file (type png)
 <use Immagini/boxplotall.png>
-Package pdftex.def Info: Immagini/boxplotall.png  used on input line 354.
+Package pdftex.def Info: Immagini/boxplotall.png  used on input line 355.
 (pdftex.def)             Requested size: 384.11223pt x 306.47299pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1396,33 +1396,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.358 
-       <./Immagini/boxplotlimited.png>]) [35
+l.359 
+       <./Immagini/boxplotlimited.png>] [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.164 \include{Capitoli/2}
-                           <./Immagini/boxplotall.png>]
+l.364 N
+       e deriva che la soglia di decisione utilizzata per distinguere tra co... <./Immagini/boxplotall.png>]) [36]
 \openout2 = `Capitoli/3.aux'.
 
- (Capitoli/3.tex [36
+ (Capitoli/3.tex
+Capitolo 3.
+[37
 
 
 
 
 ]
-Capitolo 3.
-[37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38] [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]) [41] [42
+ [40]) [41]
+\openout2 = `Capitoli/Thanks.aux'.
+
+ (Capitoli/Thanks.tex [42
 
 
 
-] [43] [44
+
+]) [43] [44
+
+
 
 ] [45] [46]
 Overfull \hbox (19.66566pt too wide) in paragraph at lines 176--176
@@ -1434,7 +1440,7 @@ Overfull \hbox (5.06596pt too wide) in paragraph at lines 176--176
 [][]\OT1/ptm/m/n/12 OWASP Foun-da-tion. (2021b). \OT1/ptm/m/it/12 A03:2021 { In-jec-tion \OT1/ptm/m/n/12 [Ul-ti-mo ac-ces-so 23/03/2026].
  []
 
-[47] [48] (main.aux (Capitoli/Frontespizio_Merca.aux) (Capitoli/Dedica.aux) (Capitoli/Introduction.aux) (Capitoli/1.aux) (Capitoli/2.aux) (Capitoli/3.aux))
+[47] [48] (main.aux (Capitoli/Frontespizio_Merca.aux) (Capitoli/Dedica.aux) (Capitoli/Introduction.aux) (Capitoli/1.aux) (Capitoli/2.aux) (Capitoli/3.aux) (Capitoli/Thanks.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1450,17 +1456,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38403 strings out of 467867
- 747410 string characters out of 5417366
- 1889691 words of memory out of 5000000
- 66500 multiletter control sequences out of 15000+600000
+ 38431 strings out of 467867
+ 748453 string characters out of 5417366
+ 1892758 words of memory out of 5000000
+ 66521 multiletter control sequences out of 15000+600000
  651332 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1275b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (48 pages, 492785 bytes).
+<C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/6060650/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (48 pages, 506457 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
+ 662 PDF objects out of 1000 (max. 8388607)
  183 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3114,6 +3114,10 @@
     <bcf:citekey order="41" intorder="1">mitreT1020a</bcf:citekey>
     <bcf:citekey order="42" intorder="1">liu2008isolation</bcf:citekey>
     <bcf:citekey order="43" intorder="1">sommer2010outside</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">liu2008isolation</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">liu2012isolationbased</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">chandola2009anomaly</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">zimek2012survey</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

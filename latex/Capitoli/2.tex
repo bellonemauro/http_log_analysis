@@ -333,6 +333,7 @@ Si estrapola la seguente tabella:
             has\_suspicious\_request\_len, is\_error, is\_known\_bot, special\_chars & 1                  \\
             \hline
       \end{tabular}
+      \label{table:comboFeat}
       \caption{Report di classificazione delle occorrenze per combinazione di feature.}
 \end{table}
 
@@ -356,4 +357,14 @@ Per il dataset limitato, il boxplot mostra che i 4 attacchi cadono chiaramente n
       \label{fig:boxplotall}
 \end{figure}
 
-Per il dataset completo, la distribuzione degli score mostra uno sbilanciamento più accentuato e il segnale dei quattro attacchi perde forza discriminante, poichè la soglia di anomalia non li isola più in modo affidabile rispetto ai valori anomali dell'intero dataset.
+Per il dataset completo, la distribuzione degli anomaly score evidenzia uno sbilanciamento significativamente più marcato. In particolare, la presenza di un numero estremamente elevato di osservazioni induce il modello a ridefinire implicitamente la nozione di ``normalità'' su una scala molto più ampia e variegata. In questo contesto, i quattro attacchi inseriti manualmente perdono la loro capacità discriminante, poiché i loro score non risultano più sufficientemente estremi rispetto alla coda della distribuzione globale.
+
+Questo fenomeno è direttamente collegato al meccanismo di funzionamento dell'Isolation Forest: l’algoritmo assegna un punteggio di anomalia in base alla profondità media necessaria per isolare un’osservazione. Tuttavia, in presenza di dataset fortemente sbilanciati, caratterizzati da una grande eterogeneità del traffico legittimo, anche istanze non malevole ma statisticamente rare (ad esempio richieste generate da bot o con lunghezze anomale) tendono ad essere isolate rapidamente. Di conseguenza, esse vengono erroneamente classificate come anomalie.
+
+Ne deriva che la soglia di decisione utilizzata per distinguere tra comportamento normale e anomalo perde efficacia: invece di evidenziare esclusivamente eventi di sicurezza, il modello intercetta una vasta quantità di deviazioni statistiche non rilevanti dal punto di vista applicativo. Questo effetto porta a un aumento significativo dei falsi positivi, riducendo drasticamente la precisione del sistema.
+
+Questa analisi mette in luce uno dei limiti intrinseci dell'Isolation Forest in scenari reali con forte sbilanciamento tra istanze normali e anomalie \parencite{liu2008isolation}. In particolare, l’algoritmo, essendo non supervisionato e basato su partizionamenti casuali dello spazio delle feature, non è in grado di distinguere tra anomalie \emph(strutturali) (legate ad attacchi) e anomalie \emph(statistiche) (legate alla variabilità intrinseca dei dati contenuti nei log web) \parencite{liu2012isolationbased}.
+
+L’evidenza empirica riportata in Tabella~\ref{table:comboFeat} rafforza questa interpretazione. La maggior parte delle osservazioni identificate come anomale è associata a combinazioni di feature riconducibili a traffico legittimo, come \texttt{is\_known\_bot} e \texttt{special\_chars}, che da sole rappresentano 86.654 occorrenze (86,7\%). Tali pattern sono tipici di crawler o agenti automatici e non indicano necessariamente comportamenti malevoli. Al contrario, le combinazioni di feature potenzialmente indicative di attacchi, come la presenza di \texttt{has\_sql\_keywords}, risultano numericamente marginali (164 occorrenze, 0,16\%), evidenziando una forte diluizione del segnale anomalo all’interno del traffico complessivo \parencite{chandola2009anomaly}.
+
+I boxplot riportati nelle Fig~\ref{fig:boxplotlimit} e  Fig~\ref{fig:boxplotall} confermano visivamente questo comportamento: mentre nel dataset limitato gli attacchi risultano chiaramente separabili dalla distribuzione principale, nel dataset completo essi si collocano all’interno di una coda già densamente popolata da osservazioni non malevole. Questo comporta un collasso della capacità discriminativa del modello, fenomeno tipico degli approcci di anomaly detection non supervisionata in presenza di sbilanciamento estremo \parencite{zimek2012survey}.
