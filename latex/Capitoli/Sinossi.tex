@@ -1,0 +1,25 @@
+\chapter*{Sinossi}
+
+\section*{Obbiettivi e contesto}
+La presente tesi pone come obiettivo centrale la progettazione e realizzazione di un sistema prototipale che, sfruttando algoritmi di machine learning, sia in grado di analizzare automaticamente i log generati dai web server e rilevare eventuali anomalie o minacce.
+
+La crescente evoluzione del panorama informatico ha reso sempre più urgente la necessità di individuare tempestivamente le minacce che possono originarsi dalle infrastrutture web ed i metodi convenzionali, basati su regole statiche o sull’impiego di blacklist, manifestano significative limitazioni soprattutto in termini di scalabilità e adattabilità. La natura dinamica delle minacce informatiche richiede soluzioni che sappiano evolversi e rispondere in modo efficace ai cambiamenti continui del contesto tecnologico.
+
+Questo approccio mira a rispondere alla crescente necessità di individuazione tempestiva di tutto lo spettro delle possibili minacce offrendo un sistema più veloce e non supervisionato.
+
+Dopo alcuni brevi cenni storici e metodologici sulla nascita, l'evoluzione ed il contesto inerenti il protocoloo HTTP ed analogamente ai concetti di Machine Learning e nel dettaglio dell'algoritmo di Isolation Forest, utili a fornire un quadro più chiaro sul contesto analizzato, si passa alla costruzione della logica dello script (questo visonabile nella repository GitHub al seguente link: \href{https://github.com/bellonemauro/http\_log\_analysis}{\emph{github.com/bellonemauro/http\_log\_analysis}})
+
+\section*{Metodologia}
+
+Il caso di studio si basa sull'analisi di un dataset di log HTTP reali sottoposti ad un \emph{pre-processing} per renderli idonei all'elaborazione automatizzata ed integrati con record artificiali volti a simulare delle anomalie derivante da tentativi di attacco informatico. L'algoritmo scelto è Isolation Forest, una tecnica di anomaly detection non supervisionata particolarmente efficiente per identificare osservazioni rare in grandi volumi di dati, grazie alla sua capacità di isolare i punti anomali tramite partizioni casuali dello spazio delle feature, riducendo l'impatto della \emph{curse of dimensionality}.
+
+
+Il processo di implementazione ha previsto una fase di \emph{}{Feature Engineering}, ovvero la trasformazione dei log testuali in indicatori numerici e booleani basati su analisi dimensionale, \emph{pattern matching} (firme di attacco come \emph{SQLi} o \emph{XSS}) e analisi comportamentale; ed una fase di ottimizzazione che comprende l’utilizzo di \emph{GridSearchCV} per calibrare i parametri del modello (contamination e numero di alberi) in maniera automatica senza ricadere nella scelta arbitraria degli stessi, privilegiando la metrica \emph{recall} per minimizzare i falsi negativi e massimizzare l'identificazione degli attacchi ed infine l'addestramento del modello con relativi risultati, applicati sia ad un dataset limitato, sia all'intero log web.
+
+\section*{Risultati e conclusioni}
+
+L’esperimento ha dimostrato che, lavorando con un dataset limitato e circoscritto, il modello di Isolation Forest è efficace nell’identificare gli attacchi inseriti artificialmente, distinguendoli facilmente dal traffico normale.
+
+Tuttavia, nel momento in cui l’algoritmo viene applicato all’intero dataset, che risulta un fortissimo sbilanciamento tra traffico lecito e minacce reali, le prestazioni diminuiscono drasticamente facendo si che l’algoritmo identifichi come anomalie attività lecite ma statisticamente atipiche, aumentando significativamente il numero dei falsi positivi ed ignorando quindi i record taggati in precedenza come “attacchi reali”.
+
+In conclusione, la tesi evidenzia che l’Isolation Forest rappresenta un ottimo strumento esplorativo, ma da solo non può sostituire i meccanismi di difesa tradizionali. L’efficacia operativa in contesti reali richiede un approccio combinato di analisi automatizzata con filtri aggiuntivi, controlli supervisionati ed una costante validazione e ricerca umana per distinguere tra anomalie statistiche e reali minacce alla sicurezza.

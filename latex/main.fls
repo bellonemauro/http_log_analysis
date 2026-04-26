@@ -360,6 +360,9 @@ INPUT Capitoli\3.aux
 INPUT .\Capitoli\Thanks.aux
 INPUT .\Capitoli\Thanks.aux
 INPUT Capitoli\Thanks.aux
+INPUT .\Capitoli\Sinossi.aux
+INPUT .\Capitoli\Sinossi.aux
+INPUT Capitoli\Sinossi.aux
 OUTPUT main.aux
 INPUT C:\Users\6060650\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\6060650\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -566,6 +569,12 @@ OUTPUT Capitoli\Thanks.aux
 INPUT .\Capitoli\Thanks.tex
 INPUT .\Capitoli\Thanks.tex
 INPUT Capitoli\Thanks.tex
+INPUT .\Capitoli\Sinossi.tex
+INPUT .\Capitoli\Sinossi.tex
+OUTPUT Capitoli\Sinossi.aux
+INPUT .\Capitoli\Sinossi.tex
+INPUT .\Capitoli\Sinossi.tex
+INPUT Capitoli\Sinossi.tex
 INPUT main.aux
 INPUT .\Capitoli\Frontespizio_Merca.aux
 INPUT .\Capitoli\Frontespizio_Merca.aux
@@ -588,6 +597,9 @@ INPUT Capitoli\3.aux
 INPUT .\Capitoli\Thanks.aux
 INPUT .\Capitoli\Thanks.aux
 INPUT Capitoli\Thanks.aux
+INPUT .\Capitoli\Sinossi.aux
+INPUT .\Capitoli\Sinossi.aux
+INPUT Capitoli\Sinossi.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml

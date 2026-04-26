@@ -1,23 +1,23 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Introduzione}{7}{chapter*.2}%
-\contentsline {section}{Obiettivi}{7}{section*.3}%
-\contentsline {section}{Metodologia}{8}{section*.4}%
-\contentsline {chapter}{\numberline {1}Struttura di un log HTTP e Machine Learning}{9}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Il protocollo HTTP in generale }{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Log HTTP, definizione e struttura }{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Log HTTP, Datamodel per il caso studio}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Intelligenza artificiale e machine learning}{13}{section.1.4}%
-\contentsline {section}{\numberline {1.5}ML, Isolation Forest per il rilevamento di anomalie}{14}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Isolation Forest, principi di funzionamento}{16}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Implementazione in {P}ython}{19}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Fase di estrazione e caricamento}{19}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Aggiunta al dataset di attacchi artificiali}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ingegneria delle feature}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Applicazione dell'algoritmo}{26}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Interpretazione dei risultati}{28}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Applicazione dell'algoritmo all'intero dataset}{31}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Conclusioni}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sintesi del caso studio}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Considerazioni finali}{39}{section.3.2}%
-\contentsline {chapter}{Ringraziamenti}{43}{chapter*.5}%
+\contentsline {chapter}{Introduzione}{4}{chapter*.2}%
+\contentsline {section}{Obiettivi}{4}{section*.3}%
+\contentsline {section}{Metodologia}{5}{section*.4}%
+\contentsline {chapter}{\numberline {1}Struttura di un log HTTP e Machine Learning}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Il protocollo HTTP in generale }{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Log HTTP, definizione e struttura }{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Log HTTP, Datamodel per il caso studio}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Intelligenza artificiale e machine learning}{10}{section.1.4}%
+\contentsline {section}{\numberline {1.5}ML, Isolation Forest per il rilevamento di anomalie}{11}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Isolation Forest, principi di funzionamento}{13}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Implementazione in {P}ython}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fase di estrazione e caricamento}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Aggiunta al dataset di attacchi artificiali}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Ingegneria delle feature}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Applicazione dell'algoritmo}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Interpretazione dei risultati}{24}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Applicazione dell'algoritmo all'intero dataset}{27}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Conclusioni}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sintesi del caso studio}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Considerazioni finali}{35}{section.3.2}%
+\contentsline {chapter}{Ringraziamenti}{38}{chapter*.5}%
